@@ -28,13 +28,6 @@ animation:moverParticulas 40s linear infinite;
 z-index:-1;
 }
 
-/* HERO */
-
-.hero{
-height:100vh;
-padding:40px;
-}
-
 /* NAVBAR */
 
 .navbar{
@@ -45,6 +38,7 @@ background: rgba(255,255,255,0.12);
 backdrop-filter: blur(12px);
 padding:15px 30px;
 border-radius:15px;
+margin:20px;
 }
 
 /* LOGO */
@@ -86,7 +80,12 @@ transition:0.3s;
 width:100%;
 }
 
-/* TEXTO PRINCIPAL */
+/* HERO INICIO */
+
+.hero{
+height:100vh;
+padding:40px;
+}
 
 .hero-content{
 text-align:center;
@@ -123,7 +122,7 @@ transform:scale(1.1);
 background:#ffe3f2;
 }
 
-/* TARJETAS */
+/* TARJETAS INICIO */
 
 .cards{
 display:flex;
@@ -144,8 +143,6 @@ transition:0.4s;
 position:relative;
 overflow:hidden;
 }
-
-/* BRILLO TARJETA */
 
 .card::before{
 content:"";
@@ -168,8 +165,6 @@ transition:0.5s;
 top:100%;
 left:100%;
 }
-
-/* EFECTO HOVER */
 
 .card:hover{
 transform:translateY(-10px) scale(1.05);
@@ -211,6 +206,71 @@ font-size:18px;
 opacity:0.7;
 }
 
+/* TITULO 8M */
+
+.titulo-8m{
+text-align:center;
+margin-top:120px;
+margin-bottom:40px;
+}
+
+.titulo-8m h1{
+font-size:60px;
+}
+
+.titulo-8m p{
+font-size:20px;
+opacity:0.8;
+}
+
+/* TARJETAS 8M */
+
+.cards-8m{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.card-8m{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:20px;
+width:280px;
+border-radius:15px;
+transition:0.4s;
+text-align:center;
+}
+
+.card-8m:hover{
+transform:translateY(-10px) scale(1.05);
+background:rgba(255,255,255,0.25);
+}
+
+/* IMAGENES TARJETAS 8M */
+
+.card-8m img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* TITULOS TARJETAS */
+
+.card-8m h2{
+margin-bottom:10px;
+}
+
+/* LISTAS */
+
+.card-8m ul{
+text-align:left;
+margin-left:20px;
+}
+
 /* ANIMACIONES */
 
 @keyframes aparecer{
@@ -244,6 +304,7 @@ to{
 transform:translateY(-200px);
 }
 }
+<<<<<<< HEAD
 body{
 font-family: Arial, sans-serif;
 text-align:center;
@@ -277,4 +338,47 @@ border-radius:5px;
 
 .boton:hover{
 background:#4b3cbf;
+=======
+.cards-8m{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.card-8m{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+padding:20px;
+width:320px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card-8m:hover{
+transform:translateY(-8px);
+}
+
+/* IMAGENES PEQUEÑAS */
+
+.card-8m img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* TITULO */
+
+.card-8m h2{
+margin-bottom:10px;
+}
+
+/* LISTA */
+
+.card-8m ul{
+margin-left:20px;
+>>>>>>> 090844cab6a126501de3c54ab03415f2ccd100e5
 }

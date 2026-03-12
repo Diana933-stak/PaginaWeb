@@ -2,37 +2,15 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI', sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-/* FONDO ANIMADO */
+/* FONDO GENERAL */
 
 body{
-background: linear-gradient(270deg,#6a5cff,#ff6fa5,#8f7bff);
-background-size:400% 400%;
-animation:fondoAnimado 12s ease infinite;
+background: linear-gradient(135deg,#6a5cff,#ff6fa5,#8f7bff);
+min-height:100vh;
 color:white;
-overflow-x:hidden;
-}
-
-/* PARTICULAS */
-
-.particles{
-position:fixed;
-width:100%;
-height:100%;
-background-image:radial-gradient(white 1px, transparent 1px);
-background-size:40px 40px;
-opacity:0.15;
-animation:moverParticulas 40s linear infinite;
-z-index:-1;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-padding:40px;
 }
 
 /* NAVBAR */
@@ -41,74 +19,49 @@ padding:40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background: rgba(255,255,255,0.12);
-backdrop-filter: blur(12px);
-padding:15px 30px;
-border-radius:15px;
+padding:15px 40px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
 }
-
-/* LOGO */
 
 .logo{
-font-weight:bold;
 font-size:20px;
+font-weight:bold;
 }
-
-/* MENU */
 
 .menu a{
 margin-left:25px;
 text-decoration:none;
 color:white;
 font-weight:500;
-position:relative;
 transition:0.3s;
 }
 
 .menu a:hover{
-transform:translateY(-2px);
+opacity:0.7;
 }
 
-/* LINEA MENU */
+/* HERO */
 
-.menu a::after{
-content:"";
-width:0%;
-height:2px;
-background:white;
-position:absolute;
-left:0;
-bottom:-5px;
-transition:0.3s;
-}
-
-.menu a:hover::after{
-width:100%;
-}
-
-/* TEXTO PRINCIPAL */
-
-.hero-content{
+.hero{
 text-align:center;
-margin-top:180px;
-animation:aparecer 2s ease;
+margin-top:120px;
 }
 
-.hero-content h1{
+.hero h1{
 font-size:60px;
 margin-bottom:20px;
 }
 
-.hero-content p{
+.hero p{
 font-size:20px;
-opacity:0.9;
 }
 
-/* BOTON PRINCIPAL */
+/* BOTON */
 
 .btn{
 display:inline-block;
-margin-top:25px;
+margin-top:20px;
 padding:12px 25px;
 background:white;
 color:#ff4fa3;
@@ -120,10 +73,9 @@ transition:0.3s;
 
 .btn:hover{
 transform:scale(1.1);
-background:#ffe3f2;
 }
 
-/* TARJETAS */
+/* TARJETAS DEL INICIO */
 
 .cards{
 display:flex;
@@ -135,48 +87,17 @@ flex-wrap:wrap;
 
 .card{
 background:rgba(255,255,255,0.15);
-backdrop-filter:blur(10px);
 padding:25px;
 border-radius:15px;
-width:220px;
+width:230px;
 text-align:center;
-transition:0.4s;
-position:relative;
-overflow:hidden;
+transition:0.3s;
 }
-
-/* BRILLO TARJETA */
-
-.card::before{
-content:"";
-position:absolute;
-width:200%;
-height:200%;
-background:linear-gradient(
-120deg,
-transparent,
-rgba(255,255,255,0.3),
-transparent
-);
-transform:rotate(25deg);
-top:-100%;
-left:-100%;
-transition:0.5s;
-}
-
-.card:hover::before{
-top:100%;
-left:100%;
-}
-
-/* EFECTO HOVER */
 
 .card:hover{
-transform:translateY(-10px) scale(1.05);
+transform:translateY(-10px);
 background:rgba(255,255,255,0.25);
 }
-
-/* BOTON TARJETAS */
 
 .btn-card{
 display:inline-block;
@@ -187,60 +108,80 @@ color:#ff4fa3;
 text-decoration:none;
 border-radius:20px;
 font-size:14px;
-transition:0.3s;
-}
-
-.btn-card:hover{
-background:#ffd7eb;
-transform:scale(1.05);
 }
 
 /* FRASE */
 
 .frase{
 text-align:center;
-padding:80px 20px;
-font-size:28px;
-opacity:0.9;
-animation:aparecer 3s ease;
+padding:70px 20px;
+font-size:26px;
 }
 
 .frase p{
 margin-top:15px;
 font-size:18px;
-opacity:0.7;
+opacity:0.8;
 }
 
-/* ANIMACIONES */
+/* TITULO PAGINA 8M */
 
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+.titulo-8m{
+text-align:center;
+margin-top:80px;
+margin-bottom:40px;
 }
 
-@keyframes fondoAnimado{
-0%{
-background-position:0% 50%;
-}
-50%{
-background-position:100% 50%;
-}
-100%{
-background-position:0% 50%;
-}
+.titulo-8m h1{
+font-size:50px;
 }
 
-@keyframes moverParticulas{
-from{
-transform:translateY(0);
+.titulo-8m p{
+font-size:20px;
+opacity:0.9;
 }
-to{
-transform:translateY(-200px);
+
+/* TARJETAS 8M */
+
+.cards-8m{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
 }
+
+.card-8m{
+background:rgba(255,255,255,0.15);
+padding:20px;
+width:320px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card-8m:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.25);
+}
+
+/* IMAGENES TARJETAS */
+
+.card-8m img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* TITULOS */
+
+.card-8m h2{
+margin-bottom:10px;
+}
+
+/* LISTA */
+
+.card-8m ul{
+margin-left:20px;
 }

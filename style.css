@@ -244,3 +244,37 @@ to{
 transform:translateY(-200px);
 }
 }
+body{
+font-family: Arial, sans-serif;
+text-align:center;
+background: linear-gradient(to right,#b993d6,#8ca6db);
+color:white;
+}
+
+.card{
+background:white;
+color:#333;
+width:300px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.boton{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#6a5acd;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.boton:hover{
+background:#4b3cbf;
+}

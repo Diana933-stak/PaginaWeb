@@ -304,7 +304,6 @@ to{
 transform:translateY(-200px);
 }
 }
-<<<<<<< HEAD
 body{
 font-family: Arial, sans-serif;
 text-align:center;
@@ -338,47 +337,4 @@ border-radius:5px;
 
 .boton:hover{
 background:#4b3cbf;
-=======
-.cards-8m{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-padding:40px;
-}
-
-.card-8m{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(10px);
-padding:20px;
-width:320px;
-border-radius:15px;
-transition:0.3s;
-}
-
-.card-8m:hover{
-transform:translateY(-8px);
-}
-
-/* IMAGENES PEQUEÑAS */
-
-.card-8m img{
-width:100%;
-height:150px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
-}
-
-/* TITULO */
-
-.card-8m h2{
-margin-bottom:10px;
-}
-
-/* LISTA */
-
-.card-8m ul{
-margin-left:20px;
->>>>>>> 090844cab6a126501de3c54ab03415f2ccd100e5
 }

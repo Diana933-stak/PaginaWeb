@@ -338,3 +338,134 @@ border-radius:5px;
 .boton:hover{
 background:#4b3cbf;
 }
+.menu{
+display:flex;
+justify-content:center;
+gap:40px;
+background:rgba(255,255,255,0.15);
+padding:15px 40px;
+border-radius:40px;
+width:fit-content;
+margin:20px auto;
+backdrop-filter:blur(5px);
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+transition:0.3s;
+}
+
+.menu a:hover{
+transform:scale(1.1);
+}
+.menu-mujeres{
+display:flex;
+justify-content:center;
+gap:35px;
+background:rgba(255,255,255,0.2);
+padding:14px 35px;
+border-radius:40px;
+width:fit-content;
+margin:20px auto;
+}
+
+.menu-mujeres a{
+text-decoration:none;
+color:white;
+font-weight:600;
+font-size:18px;
+transition:0.3s;
+}
+
+.menu-mujeres a:hover{
+transform:scale(1.1);
+}
+.contacto-proyecto{
+text-align:center;
+max-width:900px;
+margin:60px auto;
+padding:30px;
+animation:aparecer 1.2s ease;
+}
+
+.contacto-proyecto h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.descripcion{
+font-size:18px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+.creadoras{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.persona{
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:15px;
+width:300px;
+transition:0.3s;
+}
+
+.persona:hover{
+transform:translateY(-5px);
+}
+
+.persona h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.frase{
+margin-top:50px;
+font-size:22px;
+font-style:italic;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.descripcion{
+max-width:800px;
+margin:20px auto;
+font-size:18px;
+line-height:1.6;
+}
+
+.creadoras{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.persona{
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:15px;
+width:300px;
+}
+
+.frase{
+margin-top:50px;
+font-size:22px;
+font-style:italic;
+}

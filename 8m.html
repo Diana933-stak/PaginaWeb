@@ -1,54 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>8 de Marzo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-<meta charset="UTF-8">
-<title>8 de Marzo</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- PARTICULAS -->
+    <div class="particles"></div>
 
-<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Mujeres que cambiaron el mundo</div>
 
-<h1 class="titulo">8 de Marzo</h1>
-<p class="subtitulo">Día Internacional de la Mujer</p>
+      <div class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="mujeres.html">Mujeres</a>
+        <a href="8m.html">8M</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
 
-<div class="contenedor">
+    <!-- SECCION 8M -->
+    <section class="pagina8m">
+      <h1>8 de Marzo</h1>
+      <p class="subtitulo">Día Internacional de la Mujer</p>
 
-<div class="tarjeta">
-<h2>Origen del 8M</h2>
-<p>
-El Día Internacional de la Mujer surge de los movimientos obreros de finales del siglo XIX y principios del siglo XX,
-cuando muchas mujeres comenzaron a exigir mejores condiciones laborales, igualdad de derechos y participación en la sociedad.
-</p>
-</div>
+      <!-- TARJETAS -->
+      <div class="contenedor8m">
+        <div class="tarjeta8m" onclick="abrirModal('modalOrigen')">
+          <img src="imgs/ORIGEN8M.png" alt="Origen del 8M" />
+          <h2>Origen del 8M</h2>
+          <p>
+            El Día Internacional de la Mujer surge de los movimientos obreros de
+            finales del siglo XIX y principios del siglo XX...
+          </p>
+        </div>
 
-<div class="tarjeta">
-<h2>Lucha por los derechos</h2>
-<p>
-A lo largo de la historia, las mujeres han liderado movimientos sociales que han permitido avances importantes
-como el derecho al voto, el acceso a la educación y la participación en espacios políticos.
-</p>
-</div>
+        <div class="tarjeta8m" onclick="abrirModal('modalLucha')">
+          <img src="imgs/LUCHA DERECHOS.png" alt="Lucha por los derechos" />
+          <h2>Lucha por los derechos</h2>
+          <p>
+            A lo largo de la historia, las mujeres han luchado por derechos
+            fundamentales como el voto...
+          </p>
+        </div>
 
-<div class="tarjeta">
-<h2>Impacto de las mujeres</h2>
-<p>
-Las mujeres han contribuido en áreas como la ciencia, la medicina, la educación, el arte y la política,
-transformando el mundo con sus aportes.
-</p>
-</div>
+        <div class="tarjeta8m" onclick="abrirModal('modalImpacto')">
+          <img src="imgs/IMPACTO EN EL MUNDO.png" alt="Impacto en el mundo" />
+          <h2>Impacto en el mundo</h2>
+          <p>
+            Las mujeres han transformado el mundo en áreas como la ciencia...
+          </p>
+        </div>
+      </div>
 
-<div class="tarjeta">
-<h2>Datos interesantes</h2>
-<ul>
-<li>El 8M se celebra en más de 100 países.</li>
-<li>La ONU lo reconoce desde 1975.</li>
-<li>El color morado simboliza la lucha por la igualdad.</li>
-</ul>
-</div>
+      <!-- DATOS -->
+      <div class="datos8m">
+        <h2>Datos interesantes</h2>
+        <ul>
+          <li>🌸 El 8 de marzo se celebra en más de 100 países.</li>
+          <li>🌸 La ONU lo reconoce oficialmente desde 1975.</li>
+          <li>🌸 El color morado simboliza la lucha por la igualdad.</li>
+          <li>🌸 Se realizan marchas y actividades cada año.</li>
+        </ul>
+      </div>
+    </section>
 
-</div>
-<a href="index.html" class="boton-volver">Volver</a>
+    <!-- ================= MODALES ================= -->
 
-</body>
+    <div id="modalOrigen" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal('modalOrigen')">&times;</span>
+        <h2>Origen del 8M</h2>
+        <p>
+          El Día Internacional de la Mujer, conmemorado cada 8 de marzo, tiene
+          sus raíces en las luchas sociales y laborales de las mujeres a finales
+          del siglo XIX y comienzos del siglo XX, en un contexto de profunda
+          desigualdad. Durante esta época, muchas mujeres trabajaban en fábricas
+          en condiciones precarias, con jornadas excesivas, bajos salarios y sin
+          derechos laborales básicos. Uno de los acontecimientos más
+          representativos ocurrió en 1908 en Nueva York, cuando un grupo de
+          mujeres trabajadoras textiles salió a las calles para protestar por
+          mejores condiciones laborales, la reducción de la jornada de trabajo y
+          el derecho al voto. Estas manifestaciones marcaron un precedente
+          importante en la lucha por la igualdad.
+        </p>
+      </div>
+    </div>
+
+    <div id="modalLucha" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal('modalLucha')">&times;</span>
+        <h2>Lucha por los derechos</h2>
+        <p>
+          A lo largo de la historia, las mujeres han protagonizado una lucha
+          constante por el reconocimiento de sus derechos y la igualdad en la
+          sociedad. Durante muchos años, fueron excluidas de la educación, la
+          participación política y el acceso a oportunidades laborales, siendo
+          limitadas a roles tradicionales dentro del hogar. Uno de los logros
+          más importantes de esta lucha fue el derecho al voto, alcanzado en
+          distintos países durante el siglo XX gracias al esfuerzo de
+          movimientos sufragistas. Este avance marcó un paso fundamental hacia
+          la participación de las mujeres en la toma de decisiones políticas y
+          sociales.
+        </p>
+      </div>
+    </div>
+
+    <div id="modalImpacto" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal('modalImpacto')">&times;</span>
+        <h2>Impacto en el mundo</h2>
+        <p>
+          El impacto de las mujeres en el mundo ha sido profundo y transformador
+          en todos los ámbitos de la sociedad. A lo largo de la historia, han
+          contribuido de manera significativa en áreas como la ciencia, la
+          tecnología, la política, la educación, el arte y la economía, a pesar
+          de haber enfrentado múltiples barreras y desigualdades. En el campo
+          científico, muchas mujeres han realizado descubrimientos fundamentales
+          que han cambiado la forma en que entendemos el mundo, aunque en muchos
+          casos su trabajo no fue reconocido en su momento. En la política, han
+          liderado movimientos sociales, impulsado leyes y defendido los
+          derechos humanos, generando cambios importantes en sus países y a
+          nivel global.
+        </p>
+      </div>
+    </div>
+
+    <!-- ================= JS ================= -->
+
+    <script>
+      function abrirModal(id) {
+        document.getElementById(id).style.display = "flex";
+      }
+
+      function cerrarModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        let modales = document.querySelectorAll(".modal");
+        modales.forEach((modal) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      };
+    </script>
+  </body>
 </html>

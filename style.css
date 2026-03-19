@@ -5,8 +5,6 @@ box-sizing:border-box;
 font-family:'Segoe UI', sans-serif;
 }
 
-/* FONDO ANIMADO*/
-
 body{
 background: linear-gradient(270deg,#6a5cff,#ff6fa5,#8f7bff);
 background-size:400% 400%;
@@ -15,7 +13,6 @@ color:white;
 overflow-x:hidden;
 }
 
-/* PARTICULAS */
 
 .particles{
 position:fixed;
@@ -28,7 +25,6 @@ animation:moverParticulas 40s linear infinite;
 z-index:-1;
 }
 
-/* NAVBAR */
 
 .navbar{
 display:flex;
@@ -41,14 +37,12 @@ border-radius:15px;
 margin:20px;
 }
 
-/* LOGO */
 
-.logo{
-font-weight:bold;
-font-size:20px;
-}
+    .logo{
+    font-weight:bold;
+    font-size:20px;
+    }
 
-/* MENU */
 
 .menu a{
 margin-left:25px;
@@ -63,7 +57,6 @@ transition:0.3s;
 transform:translateY(-2px);
 }
 
-/* LINEA MENU */
 
 .menu a::after{
 content:"";
@@ -80,7 +73,6 @@ transition:0.3s;
 width:100%;
 }
 
-/* HERO INICIO */
 
 .hero{
 height:100vh;
@@ -103,7 +95,6 @@ font-size:20px;
 opacity:0.9;
 }
 
-/* BOTON PRINCIPAL */
 
 .btn{
 display:inline-block;
@@ -284,7 +275,7 @@ margin-bottom:25px;
 font-size:20px;
 margin-bottom:12px;
 }
-/* ================= MODALES (VENTANAS 8M) ================= */
+
 
 .modal{
 display:none;
@@ -315,8 +306,6 @@ color:white;
 text-align:center;
 
 position:relative;
-
-/* animación */
 animation:zoomModal 0.4s ease;
 }
 
@@ -344,7 +333,7 @@ transform:scale(1.2);
 color:#ffb6d9;
 }
 
-/* ANIMACIONES */
+
 
 @keyframes aparecer{
 from{
@@ -546,7 +535,7 @@ font-style:italic;
 width:70px;
 height:70px;
 object-fit:cover;
-border-radius:50%;
+border-radius:50%; 
 display:block;
 margin:10px auto;
 }
